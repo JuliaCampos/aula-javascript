@@ -116,6 +116,7 @@ console.log(tipo);
 
 //operadores lógicos
 //operador lógico e (&&)
-//operador lógico 
+//operador lógico ou (||)
+//operador not (!)
 
 //operadores bitwise
