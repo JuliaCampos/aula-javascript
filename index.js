@@ -1,42 +1,44 @@
 //mostrar na tela
-console.log('hello world')
- 
- //variaveis 
- let idade = 15;
- console.log('idade = ' + idade);
- 
- //constantes
+//console.log('hello world')
+
+//variaveis 
+//let idade = 15;
+//console.log('idade = ' + idade);
+
+//constantes
+/*
 let valorIngressoAdulto = 20;
 valorIngressoAdulto = 30;
 console.log('valor ingresso: ' + valorIngressoAdulto);
 
 const valorNaoPodeMudar = 10;
-console.log('valor constante: ' + valorNaoPodeMudar); 
+console.log('valor constante: ' + valorNaoPodeMudar);
+*/
 
 //tipos primitivos
 //referência
-let nome = 'Rafael'; // string
+/*let nome = 'Rafael'; // string
 let valor = 10.0; //number
 let bolean = true; //boolean
 let valorPadrao; // sem definição
 let corSelecionada = null; // permite redefinir valor
-
+*/
 //tipagem dinâmica
 //tipeof verifica o tipo da variavel
 
 //objetos
-let pessoa={
+/*let pessoa = {
   nome: 'Rafael', //chave e valor
   idade: 21,
   bolean: true
 };
 
 console.log(pessoa);
-
+*/
 //arrays -
 //comjunto de dados que pode ser acessado por um indice
 //a contagem inicia do zero
-let familia = [26, true, 10, 20, 'joao', 17];
+/*let familia = [26, true, 10, 20, 'joao', 17];
 
 console.log(familia.length);
 console.log(familia);
@@ -46,16 +48,16 @@ console.log(familia[3]);
 let corSite = "azul";
 let novaCorSite = "vermelho";
 //verbo + substantivo - sem parametro
-function resetaCor(){
+function resetaCor() {
   corSite = "";
 };
 
 console.log("corSite: " + corSite);
 resetaCor();
 console.log("corSite: " + corSite);
-
+*/
 //verbo + substantivo - com parametro
-function resetaCorParametro(cor, tonalidade){
+/*function resetaCorParametro(cor, tonalidade) {
   novaCorSite = cor + tonalidade;
 };
 
@@ -65,14 +67,14 @@ console.log("novaCorSite: " + novaCorSite);
 
 //tipos de funçoes
 //1- realiza uma tarefa e não devolve nada
-function dizerNome(){
+function dizerNome() {
   console.log('jhonatan');
-} 
+}
 
 dizerNome();
 
 //2- retorna resultado
-function multiplicarPorDois(valor){
+function multiplicarPorDois(valor) {
   return valor * 2;
 }
 
@@ -84,11 +86,11 @@ console.log("resultado: " + resultado);
 
 //operadores aritméticos
 let salario = 4;
-console.log(salario+salario);
-console.log(salario-salario);
-console.log(salario*salario);
-console.log(salario/salario);
-console.log(salario**salario);
+console.log(salario + salario);
+console.log(salario - salario);
+console.log(salario * salario);
+console.log(salario / salario);
+console.log(salario ** salario);
 
 let numero = 18;
 console.log(numero++);
@@ -102,12 +104,12 @@ atribuicao += atribuicao
 
 //operadores de comparação
 //igualdade estrita
-console.log (1 === 1); //compara o valor e o tipo
-console.log ('1' === 1); //compara o valor e o tipo
+console.log(1 === 1); //compara o valor e o tipo
+console.log('1' === 1); //compara o valor e o tipo
 
 //igualdade solta
-console.log(1==1); //compara apenas valores
-console.log ('1'== 1);
+console.log(1 == 1); //compara apenas valores
+console.log('1' == 1);
 
 //operador ternario
 let pontos = 100;
@@ -142,14 +144,81 @@ console.log(b);
 //if..else
 let hora = 12;
 
-if(hora > 6 && hora < 12){
+if (hora > 6 && hora < 12) {
   console.log("bom dia");
-} 
-else if(hora => 12 && hora < 18){
+}
+else if (hora => 12 && hora < 18) {
   console.log("boa tarde")
 }
-else{
+else {
   console.log("boa noite");
 }
 
 //switch...case
+let permissao;
+
+switch (permissao) {
+  case 'comum':
+    console.log('usuario comum');
+    break;
+  case 'gerente':
+    console.log('usuario gerente');
+    break;
+  case 'diretor':
+    console.log('diretor');
+    break;
+  default:
+    console.log('usuario não reconhecido')
+}
+
+//for
+for(let i = 0; i < 5; i++){
+  if(i % 2 !== 0){
+    console.log(i);
+  }
+}
+
+//while
+let i = 5;
+
+while(i >= 1){
+  if(i % 2 !== 0){
+    console.log(i);
+  }
+  i--;
+}
+*/
+
+//do..while
+/*let i = 0;
+
+do{
+  console.log('digitando', i);
+  i++;
+}while(i < 10)
+*/
+
+//for..in
+// const pessoa = {
+//   nome: 'joao',
+//   idade: 10
+// };
+
+// for(let chave in pessoa){
+//   console.log(chave);
+//   console.log(pessoa.nome);
+//   console.log(pessoa.idade);
+//   console.log(pessoa['nome']);
+// }
+
+//  const cores = ['vermelho', 'azul', 'verde'];
+
+// for(let i in cores){
+//   // console.log(i);
+//     console.log(i, cores[i]);
+// }
+
+//for..of
+// for(let cor of cores){
+//   console.log(cor);
+// }
